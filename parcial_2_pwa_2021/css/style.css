@@ -1,0 +1,148 @@
+:root {
+  --main-color: #F0DB4F;
+  --main-modal-color: rgba(240, 219, 79, .5);
+  --second-color: #2B2B2B;
+  --second-modal-color: rgba(43, 43, 43, .5);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--second-color);
+  background-color: var(--main-modal-color);
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 2rem auto;
+  overflow-x: hidden;
+  max-width: 800px;
+}
+
+a {
+  font-weight: bold;
+  color: var(--second-color);
+  transition: all .3s ease-out;
+}
+
+a:hover {
+  color: var(--second-modal-color);
+}
+
+p {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+::selection {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Header h1 { word-wrap: break-word; }
+
+.Header img {
+  margin: 0 auto;
+  display: block;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+footer {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 3rem;
+}
+
+.Main {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+}
+
+.Main iframe {
+    width: 100%;
+    height: 100%;
+}
+ 
+.respmenu a { 
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 2px solid #456789;
+  max-width: 200px;
+  background: #234567;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+}
+
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  position: absolute;  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;  
+}
+ 
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 48px;
+  pointer-events: none;
+}
+ 
+.respmenu input[type="checkbox"] {
+  opacity: 0; 
+}
+ 
+.respmenu {
+  color: white;
+  position: relative; 
+  background: #F0DB4F;
+  min-height: 48px;
+}
+ 
+.respmenu nav {
+  display: none;
+  font-size: 1.5rem;
+}
+ 
+.respmenu input:checked ~ nav {
+  display: block;
+}
+ 
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+ 
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}
+
+.respmenu li {
+  list-style: none;
+}
+
+.respmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

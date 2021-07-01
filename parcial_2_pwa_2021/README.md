@@ -1,0 +1,1 @@
+Parcial 2 (sin la api) para pwa
